@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>NihonYume</title>
+            <link rel="stylesheet" type="text/css"
+                        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+            <link rel="stylesheet" href="../css/home.css">
+            <link rel="stylesheet" href="../css/style.css" />
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+            <script src="https://kit.fontawesome.com/b3dc9770b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+            <header>
+                        <nav>
+                                    <div class="logo"></div>
+                                    <div class="categories">
+                                                <button
+                                                            class="btn btn-dropdown btn-categories__main">Categories</button>
+                                                <div class="categories__menu_1">
+                                                            <ul class="list-menu dropdown-menu__1">
+                                                                        <li>
+                                                                                    <a href="#"
+                                                                                                class="header-categories header-categories__menu-1">Ôn
+                                                                                                thi JLPT<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div class="categories__menu_2">
+                                                                                                <ul
+                                                                                                            class="list-menu dropdown-menu__2">
+                                                                                                            <li><a href="#"
+                                                                                                                                    class="header-categories header-categories__menu-2">N5</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N4</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N3</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N2</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N1</a>
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                                    </a>
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href=""
+                                                                                                class="header-categories header-categories__menu-1">Ôn
+                                                                                                thi
+                                                                                                NASTTEST<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div
+                                                                                                class="list-item categories__menu_2">
+
+                                                                                                <ul>
+                                                                                                            <li><a>N5</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N4</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N3</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N2</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N1</a>
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href=""
+                                                                                                class="header-categories header-categories__menu-1">Luyện
+                                                                                                tập kaiwa<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div
+                                                                                                class="list-item categories__menu_2">
+                                                                                                <ul>
+                                                                                                            <li><a>Sơ cấp</a>
+                                                                                                            </li>
+                                                                                                            <li><a>Trung cấp</a>
+                                                                                                            </li>
+                                                                                                            <li><a>Cao cấp</a>
+                                                                                                            </li>
+
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href=""
+                                                                                                class="header-categories header-categories__menu-1">Thi
+                                                                                                thử<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                        </li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                                    <div class="right_side"></div>
+                                    <div class="__search">
+                                                <input type="text" name="search" id="search" placeholder="Search" />
+                                    </div>
+                                    <div class="user_login">
+                                                <input type="submit" value="Log in" name="log_in"
+                                                            class="btn-submit __user" id="login" />
+                                    </div>
+                                    <div class="shopping-cart">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <div class="product-value">
+                                                            <span class="product-count">1</span>
+                                                </div>
+                                    </div>
+                                    <div class="language">
+                                                <button class="btn btn-language">
+                                                            <i class="fa-solid fa-globe"></i>
+                                                </button>
+                                                <div class="language-menu">
+                                                            <ul class="list-language">
+                                                                        <li>English</li>
+                                                                        <li>Vietnam</li>
+                                                                        <li>Chinese</li>
+                                                                        <li>Japan</li>
+                                                                        <li>Korean</li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                        </nav>
+
+            </header>
+
+            <section class="popular-course">
+                        <h1 class="section-title popular-course__title">Popular Course</h1>
+                        <div class="course">
+                                    <div class="course-nav">
+                                                <button id="menu-top_course" class="active">Top study course</button>
+                                                <button id="menu-discount">Monthly deals</button>
+                                    </div>
+                                    <ul id="top-course">
+                                                <li class="menu-link_item" id="jlpt-n3">
+                                                            <a>JLPT N3</a>
+                                                </li>
+
+                                                <li class="menu-link_item" id="jlpt-n2">
+                                                            <a>JLPT N2</a>
+                                                </li>
+
+                                                <li class="menu-link_item" id="test-exam">
+                                                            <a>Thi thử</a>
+                                                </li>
+
+                                                <li class="menu-link_item" id="kaiwa-junior">
+                                                            <a>Kaiwa sơ cấp</a>
+                                                </li>
+
+                                                <li class="menu-link_item" id="kaiwa-busy">
+                                                            <a>Kaiwa cho nguời bận rộn</a>
+                                                </li>
+                                    </ul>
+                                    <ul id="discount">
+                                                <li class="menu-link_item" id="jlpt-n3">
+                                                            <a>JLPT N3</a>
+                                                </li>
+
+                                                <li class="menu-link_item" id="jlpt-n2">
+                                                            <a>JLPT N2</a>
+                                                </li>
+
+                                                <li class="menu-link_item" id="test-exam">
+                                                            <a>Thi thử</a>
+                                                </li>
+
+                                    </ul>
+                        </div>
+            </section>
+            <section class="teacher-team">
+
+                        <div class="teacher-profile">
+                                    <div class="profile-card" id="son-sensei">
+                                                <div class="avt">
+                                                            <img src="../asset/img/pixlr-bg-result.png" alt=""
+                                                                        class="avt-img">
+
+                                                </div>
+                                                <h2 class="name">Sơn Sensei</h2>
+
+                                                <div class="knowledge">
+                                                            <p>Janpanese level: <span>N1 JLPT</span></p>
+                                                            <p>Knowledge: <span>Bachelor of Science and Technology of
+                                                                                    Information Technology University of
+                                                                                    Information Technology</span></p>
+
+                                                </div>
+                                                <div class="number-student">
+                                                            <i class="fa-solid fa-user"></i>
+                                                            <div class="count-student">
+                                                                        <p>3100+</p>
+                                                                        <span>Student was joined</span>
+                                                            </div>
+                                                </div>
+                                                <div class="profile-content">
+                                                            <ul>
+                                                                        <li>Lorem Ipsum is simply dummy text of the
+                                                                                    printing and typesetting industry.
+                                                                        </li>
+                                                                        <li>Lorem Ipsum is simply dummy text of the
+                                                                                    printing and typesetting industry.
+                                                                                    Lorem Ipsum has been the industry's
+                                                                                    standard dummy text ever since the
+                                                                                    1500s</li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                                    <div class="profile-card" id="nhi-sensei">
+                                                <div class="avt">
+                                                            <img src="../asset/img/pixlr-bg-result.png" alt=""
+                                                                        class="avt-img">
+
+                                                </div>
+                                                <h2 class="name">Nhi Sensei</h2>
+                                                <div class="knowledge">
+                                                            <p>Janpanese level: <span>N1 JLPT</span></p>
+                                                            <p>Knowledge: <span>Bachelor of Science and Technology of
+                                                                                    Information Technology University of
+                                                                                    Information Technology</span></p>
+                                                            <p></p>
+                                                </div>
+                                                <div class="number-student">
+                                                            <i class="fa-solid fa-user"></i>
+                                                            <div class="count-student">
+                                                                        <p>3100+</p>
+                                                                        <span>Student was joined</span>
+                                                            </div>
+                                                </div>
+                                                <div class="profile-content">
+                                                            <ul>
+                                                                        <li>Lorem Ipsum is simply dummy text of the
+                                                                                    printing and typesetting industry.
+                                                                        </li>
+                                                                        <li>Lorem Ipsum is simply dummy text of the
+                                                                                    printing and typesetting industry.
+                                                                                    Lorem Ipsum has been the industry's
+                                                                                    standard dummy text ever since the
+                                                                                    1500s</li>
+                                                            </ul>
+
+                                                </div>
+                                    </div>
+                        </div>
+                        <div class="content">
+                                    <h1 class="section-title teacher-team__title">Teacher's Profile</h1>
+                                    <p>The team of teachers with <b>N2-N1</b> qualifications and <b>2 more years of
+                                                            teaching experience</b> is an important factor in the
+                                                success of the quality of training at <b
+                                                            style="color: var(--red);">NihonYume</b>.</p>
+                                    <a class="btn btn-more">More...</a>
+                        </div>
+            </section>
+            <section class="video-tutorial">
+                        <h1 class="section-title">Video</h1>
+                        <div class="desc">
+                               <p class="desc-content"><b>999+</b> free videos are posted on youtube <b>NihonYume channel</b></p>  
+                               <a href="" class="link-more">Read more <i class="fa-solid fa-right-long"></i></a>   
+                        </div>
+                        
+                        <div class="video-slide">
+                                    <div class="video-item">
+                                                <div class="video" id="vid-1">
+
+                                                            <a href="" target="n_blank"><img src="../asset/img/btn-play-non.png" alt="" srcset="" class="btn-playon"></a>
+                                                            <div class="thumbnail">
+                                                                        <img src="../asset/img/268766171_1603180263365572_7349006912798671019_n.jpg" alt="" >
+                                                            </div>
+                                                            
+                                                </div>
+                                    </div>
+
+                                    <div class="video-item">
+                                                <div class="video" id="vid-2">
+                                                            <a href=""><img src="../asset/img/pixlr-bg-result.png" alt="" class="thumbnail"></a>
+                                                            <img src="../asset/img/btn-play-non.png" alt="" srcset="" class="btn-playon">
+                                                </div>
+                                    </div>
+                                    <div class="video-item">
+                                                <div class="video" id="vid-3">
+                                                            <a href=""><img src="../asset/img/pixlr-bg-result.png" alt="" class="thumbnail"></a>
+                                                            <img src="../asset/img/btn-play-non.png" alt="" srcset="" class="btn-playon">
+                                                </div>
+                                    </div>
+                                    <div class="video-item">
+                                                <div class="video" id="vid-4">
+                                                            <a href=""><img src="../asset/img/pixlr-bg-result.png" alt="" class="thumbnail"></a>
+                                                            <img src="../asset/img/btn-play-non.png" alt="" srcset="" class="btn-playon">
+                                                </div>
+                                    </div>
+                                    <div class="video-item">
+                                                <div class="video" id="vid-5">
+                                                            <a href=""><img src="../asset/img/pixlr-bg-result.png" alt="" class="thumbnail"></a>
+                                                            <img src="../asset/img/btn-play-non.png" alt="" srcset="" class="btn-playon">
+                                                </div>
+                                    </div>
+                                    <div class="video-item">
+                                                <div class="video" id="vid-1">
+                                                            <a href=""><img src="../asset/img/pixlr-bg-result.png" alt="" class="thumbnail"></a>
+                                                            <img src="../asset/img/btn-play-non.png" alt="" srcset="" class="btn-playon">
+                                                </div>
+                                    </div>
+                        </div>
+
+
+            </section class="social-group">
+                        <h1 class="section-title "></h1>
+                        <div class="box">
+                                    <div class="group-fanpage">
+                                                <h2></h2>
+                                    </div>
+                                    <div class="group-fb">
+                                                <h2></h2>
+                                    </div>
+                                    <div class="youtube-channel">
+                                                <h2></h2>
+                                                .
+                                    </div>
+                        </div>
+            <section class="certificate">
+
+            </section>
+            <section class="blog">
+                        <h1 class="section-title">Chia sẻ kiến thức tiếng Nhật</h1>
+                        <div class="box-content">
+                                    <div class="box blog-1">
+                                                <a href="#"><img src="" alt=""></a>
+                                                <h2 class="box-title blogs-list-item__title"><a href="#">Tổng hợp ngữ pháp N5 MINNA giúp luyện tập nhanh chóng trong 30 phút</a></h2>
+                                                <p class="box-desc blogs-list-item__desc">“Tổng hợp Ngữ pháp N5” là một bài học không thể thiếu và luôn xuất hiện trong tất cả các đề thi JLPT. Nắm vững tất cả các ngữ pháp sẽ giúp bạn tiến xa hơn trên con đường chinh phục giấc mơ Nhật Bản.</p>
+                                                <a href="" class="read-more">Read more <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                    <div class="box blog-2">
+                                                <a href="#"><img src="" alt=""></a>
+                                                <h2 class="box-title blogs-list-item__title"><a href="#">Học kĩ, nhớ lâu "500 chữ Kanji N3" chỉ trong 1 tháng</a></h2>
+                                                <p class="box-desc blogs-list-item__desc">Kanji là một bài học rất khó học và khó nhớ khi bạn học tiếng Nhật. Nếu bạn vẫn chưa biết cách học bảng chữ Kanji như thế nào để học nhanh và nhớ lâu thì hãy cùng NihonYume tìm hiểu trong bài viết này nhé!</p>
+                                                <a href="" class="read-more">Read more <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                    <div class="box blog-3">
+                                                <a href="#"><img src="" alt=""></a>
+                                                <h2 class="box-title blogs-list-item__title"><a href="#">BÍ QUYẾT GIỚI THIỆU BẢN THÂN BẰNG TIẾNG NHẬT TRONG GIAO TIẾP, ĐI PHỎNG VẤN</a></h2>
+                                                <p class="box-desc blogs-list-item__desc">Giới thiệu bản thân bằng tiếng Nhật là khóa học đầu tiên và bắt buộc nếu bạn muốn học tiếng Nhật thành công. Giới thiệu bản thân bằng tiếng Nhật là điều bắt buộc phải có khi đi xin việc hoặc phỏng vấn xin việc.</p>
+                                                <a href="" class="read-more">Read more <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                        </div>
+            </section>
+            <section class="jp-news">
+                        <h1 class="section-title">Tin tức Nhật Bản</h1>
+                        <div class="box-content">
+                                    <div class="box blog-1">
+                                                <a href="#"><img src="" alt=""></a>
+                                                <h2 class="box-title news-list-item__title"><a href=""><em class="title"><ruby>北朝鮮<rt>きたちょうせん</rt></ruby>が<ruby>新<rt>あたら</rt></ruby>しいミサイルを<ruby>発射<rt>はっしゃ</rt></ruby>「アメリカまで<ruby>飛<rt>と</rt></ruby>ぶ<ruby>可能性<rt>かのうせい</rt></ruby>」</em><p class="time">3月25日 16時00分</p></a></h2>
+                                                <a href="" class="read-more">Read more <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                    <div class="box blog-2">
+                                                <a href="#"><img src="" alt=""></a>
+                                                <h2 class="box-title news-list-item__title"><a href=""><em class="title">サッカーのワールドカップに7<ruby>回<rt>かい</rt></ruby><ruby>続<rt>つづ</rt></ruby>けて<ruby>出<rt>で</rt></ruby>ることが<ruby>決<rt>き</rt></ruby>まる</em><p class="time">3月25日 16時00分</p></a></h2>
+                                                <a href="" class="read-more">Read more <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                    <div class="box blog-3">
+                                                <a href="#"><img src="" alt=""></a>
+                                                <h2 class="box-title">BÍ QUYẾT GIỚI THIỆU BẢN THÂN BẰNG TIẾNG NHẬT TRONG GIAO TIẾP, ĐI PHỎNG VẤN</h2>
+                                                <a href="" class="read-more">Read more <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                        </div>
+            </section>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="../JSON/home.js"></script>
+
+</body>
+
+</html>

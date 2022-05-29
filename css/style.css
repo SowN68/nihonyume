@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+  --red: #e71726;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  width: 100%;
+  height: auto;
+}
+section {
+  width: 100%;
+  padding: 2em 5%;
+  margin-bottom: 80px;
+  min-height: auto;
+
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75px;
+  padding: 1em 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#search {
+  width: 450px;
+  height: 35px;
+  background-color: #f2f3f4;
+  border-radius: 30px;
+  padding-left: 15px;
+  border: none;
+}
+.hide {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+
+/*-----USER LOGIN------*/
+.user_login {
+  margin-left: 100px;
+}
+.user_login .btn-submit {
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.user_login #login {
+  background-color: var(--red);
+}
+/*-----LANGUAGE------*/
+.language {
+  display: block;
+  position: relative;
+}
+.language .btn-language {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border: 2.5px solid #000;
+  outline: none;
+  border-radius: 5px;
+}
+.language .language-menu {
+  display: none;
+  position: absolute;
+  top: 33px;
+  right: 0;
+  border: 2.5px solid #000;
+}
+.language:hover .language-menu {
+  display: block;
+}
+.language .language-menu .list-language {
+  padding: 0 17px;
+}
+.language .language-menu .list-language li {
+  margin-bottom: 15px;
+}
+/*-----SHOPPING CART------*/
+.shopping-cart {
+  display: block;
+  position: relative;
+}
+.shopping-cart .fa-cart-shopping {
+  cursor: pointer;
+  font-size: 27px;
+}
+.shopping-cart .product-value {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  background-color: var(--red);
+  color: #fff;
+  border-radius: 50%;
+}
+/*-----CATEGORIES------*/
+.categories {
+  width: 250px;
+  height: auto;
+  position: relative;
+}
+.categories .categories__menu_1 {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0 !important;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.categories .btn-categories__main {
+  width: 100px;
+  height: 35px;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.categories .btn-categories__main {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  transition: 0.2s;
+}
+.categories:hover .btn-categories__main {
+  transform: scale(0.95);
+  color: var(--red);
+}
+.categories:hover .categories__menu_1 {
+  display: block;
+}
+.categories .categories__menu_1 .list-menu {
+  position: relative;
+}
+.categories .categories__menu_1 .list-menu li {
+  margin-bottom: 2.5em;
+}
+.categories .categories__menu_1 .list-menu .header-categories {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  letter-spacing: normal;
+  white-space: normal;
+}
+.categories .categories__menu_1 .list-menu .header-categories .fa-caret-right {
+  margin-right: 15px;
+}
+.categories .categories__menu_1 .list-menu li {
+  cursor: pointer;
+  width: 100%;
+}
+.fa-caret-right {
+  float: right;
+}
+.categories .categories__menu_1 .categories__menu_2 .dropdown-menu__2 {
+  padding: 0 25px;
+}
+.categories .categories__menu_1 .categories__menu_2 {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  width: 200px;
+  height: auto;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.categories .categories__menu_1 .list-menu li:hover .header-categories__menu-1 {
+  color: var(--red);
+}
+.categories .categories__menu_1 .list-menu li:hover .categories__menu_2 {
+  display: inline-block;
+  left: 248px;
+  top: -9%;
+}
