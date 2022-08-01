@@ -1,0 +1,527 @@
+section{
+            padding: 0 !important;
+}
+/*-----COURSE DESC------*/
+.top-container {
+            width: 100%;
+            background-color: #1c1d1f;
+            color: white;
+            padding-top: 50px !important;
+            padding-bottom: 50px !important;
+
+}
+
+.top-container .container_background-inner-position-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+}
+
+.top-container .course-landing-page__left-side {
+            width: 48%;
+}
+
+.top-container .course-landing-page__left-side .course-title {
+            font-size: 25px;
+            margin-bottom: 16px;
+}
+
+.top-container .course-landing-page__left-side .course-desc {
+            font-size: 16px;
+            margin-bottom: 25.6px;
+}
+
+.top-container .course-landing-page__left-side .rating-wrapper {
+            
+            display: inline-flex;
+            color: #f9bd62;
+            margin-bottom: 12px;
+}
+
+.top-container .course-landing-page__left-side .course-rating-enrollment .rating {
+            display: flex;
+            gap: 8px;
+}
+
+.top-container .course-landing-page__left-side .course-rating-enrollment .rating .sumary-rating {
+            font-size: 17px;
+            color: #6839e0;
+}
+.rating-star{
+            display: inline-flex;
+            align-items: center;
+            width: 8rem;
+            height: 20px;
+}
+.sum-rating{
+            font-size: 17px;
+}
+.section-title {
+            margin: 0 2.4rem 1.6rem;
+}
+
+.introduction-asset .video-item .video {
+            display: grid;
+            width: 150px;
+            text-align: center;
+            position: relative;
+}
+
+.introduction-asset .video-item .video .thumbnail img {
+            width: 193px;
+            height: 120px;
+}
+
+.introduction-asset .video-item .video .btn-playon {
+            display: none;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 37%;
+            left: 64%;
+            transform: translateX(-50%);
+            border: 3px solid #fff;
+            border-radius: 100%;
+            transition: all 2s ease-in-out;
+}
+
+.introduction-asset .video-item .video:hover a {
+            background: black;
+}
+
+.introduction-asset .video-item .video:hover .btn-playon {
+            display: block;
+            visibility: visible;
+            transition: 0.2s ease;
+            animation: hoverBtnPlay 1.5s infinite ease-in-out;
+}
+
+@keyframes hoverBtnPlay {
+            0% {
+                        box-shadow: none;
+            }
+
+            50% {
+                        box-shadow: 0 0 0 5px rgb(255 255 255 / 35%),
+                                    0 0 0 10px rgb(255 255 255 / 65%);
+            }
+
+            70% {
+                        box-shadow: 0 0 0 5px rgb(255 255 255 / 35%),
+                                    0 0 0 10px rgb(255 255 255 / 65%);
+            }
+
+            100% {
+                        box-shadow: none;
+            }
+}
+
+.course-price {
+            margin-top: 10px;
+            margin-bottom: 17px;
+}
+
+.course-price span {
+            font-size: 30px;
+            line-height: 1;
+            padding: .4rem 0;
+            margin-right: .8rem;
+
+            white-space: nowrap;
+}
+
+.button .row-1 {
+            margin-bottom: 7px;
+}
+
+.button .btn-enroll {
+            position: relative;
+            align-items: center;
+            border: none;
+            display: inline-flex;
+            width: 150px;
+            height: 45px;
+            padding: 0 1.2rem;
+            justify-content: center;
+            user-select: none;
+            background-color: #e71726;
+            color: #fff;
+            -webkit-user-select: none;
+            vertical-align: bottom;
+            white-space: nowrap;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -.02rem;
+            font-size: 17px;
+}
+
+.button .btn-wishlist {
+            height: 45px;
+            width: 45px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -.02rem;
+            font-size: 17px;
+}
+
+.button .btn-buy {
+            width: 200px;
+            height: 45px;
+            padding: 0 1.2rem;
+            justify-content: center;
+            vertical-align: bottom;
+            white-space: nowrap;
+            font-weight: 700;
+            line-height: 1.2rem;
+            letter-spacing: -.02rem;
+            font-size: 17px;
+}
+
+.instructors-links .instrucstors-links--names .instructor-link--infor {
+            color: #6839e0;
+}
+
+.course-landing-page__body {
+            margin: 0 auto;
+            max-width: 1180px;
+}
+
+/*-----COURSE DETAILS------*/
+.course-detail-container {
+            border: 1px solid #d1d7dc;
+            padding: 2.4rem 0;
+            width: 900px;
+}
+
+.course-detail-container .infor {
+            margin: 0 auto;
+            width: 840px;
+            line-height: 1.2rem;
+}
+
+/*-----COURSE CONTENT------*/
+.course-content-container {
+            width: 900px;
+            padding: 0 !important;
+}
+
+.course-content-container .list-contents {
+            position: relative;
+            border: 1px solid #d1d7dc;
+            border-top: #fff;
+            margin-top: 69px;
+            padding: 2.4rem 0;
+            width: 900px;
+}
+
+.course-content-container .list-contents .list-contents--background {
+            margin: 0 29px 0 29px;
+}
+
+.course-content-container .infor {
+            margin: 0 auto;
+            line-height: 1.2rem;
+}
+
+.course-content-container .content-nav {
+            width: 100%;
+            float: left;
+            border-bottom: 2px solid #e71726;
+            z-index: 999;
+}
+
+.course-content-container .content-nav button {
+            width: 113px;
+            height: 43px;
+            background-color: #fff;
+            border: 0.7px solid #d1d7dc;
+            border-bottom: #fff;
+            border-radius: 4px 4px 0 0;
+            outline: none;
+
+            margin-bottom: -0.1px;
+            z-index: 0;
+}
+
+.active {
+            border: 2px solid #e71726 !important;
+            border-bottom: none !important;
+}
+
+.course-content-container .list-contents button {
+            width: 105px;
+            height: 52px;
+            font-size: 16px;
+            background-color: #fff;
+            border: 0.7px solid #d1d7dc;
+            border-radius: 4px;
+            margin-right: 15px;
+
+}
+
+.active-item {
+            border: 1px solid #e71726 !important;
+}
+
+.list-content-nav {
+            width: 600px;
+            position: relative;
+            margin-bottom: 16px;
+}
+
+.list-contents--background #expand-content {
+            display: none;
+
+}
+
+.list-contents--background .expand-container {
+            float: right;
+}
+
+.list-contents--background .expand-container .label-expand {
+            cursor: pointer;
+            color: #6839e0;
+            font-weight: bold;
+
+}
+
+.list-contents--background .content-items {
+            margin-bottom: 15px;
+
+}
+
+.list-contents--background .content-items .scroll-items .lesson-item {
+            border-bottom: 0.7px solid #d1d7dc;
+            padding: 1.6rem 2.4rem;
+}
+
+.list-contents--background .content-items .scroll-items .lesson-items--left-side {
+            width: 100px;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+}
+
+.list-contents--background .content-items .scroll-items .lesson-items--left-side .preview-label {
+            color: #BC002D;
+}
+
+.list-contents--background .content-items .scroll-items .lesson-items--left-side .lesson-sumary-time {
+            color: #6a6f73;
+}
+
+.list-contents--background .content-items .scroll-items .lesson-items--left-side .fa-lock-open {
+            display: none;
+}
+.star-rating--star-wrapper{
+            display: inline-flex;
+            align-items: center;
+            width: 10rem;
+            height: 2rem;
+}
+.star-rating--star-filled{
+            fill: #e59819;
+}
+.star-rating--star-bordered{
+            stroke: #e59819;
+}
+.check {
+            display: none;
+}
+
+.scroll-items {
+            display: none;
+}
+
+[id^=junbi]:checked+.scroll-items {
+            display: block;
+}
+
+[id^=taisaku]:checked+.scroll-items {
+            display: block;
+}
+
+/*-----INSTRUCTOR------*/
+.instructor-container .instructor-infor {
+            display: flex;
+}
+
+.instructor-container {
+            width: 900px;
+            display: flex;
+            justify-content: space-around;
+}
+
+.instructor-container .instructor-infor .instructor-desc {
+            display: flex;
+            align-items: center;
+            gap: 17px;
+}
+
+.instructor-container .instructor-infor .instructor-avt {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+}
+
+/*-----COURSE RATING------*/
+.course-rating {
+            width: 900px;
+}
+
+.course-rating .review-summary-widget--average {
+            width: 900px;
+            display: flex;
+}
+
+.course-rating .review-summary-widget--average .review-summary-widget--average-container {
+            display: inline-block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #b4690e;
+            font-weight: 700;
+            line-height: 1.15;
+            font-size: 1.6rem;
+}
+
+.course-rating .review-summary-widget--average .review-summary-widget--average-container .review-summary-widget--average-number {
+            font-size: 6.4rem;
+            text-align: center;
+}
+
+.course-rating .review-summary-widget--average .review-summary-widget--average-container .review-summary-widget--average-rating-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -.02rem;
+            text-align: center;
+}
+ .review-summary-widget--rate-percent span{
+            font-size: 1.2rem;
+            margin-left: .8rem;
+            color: #5624d0;
+}
+.review-summary-widget--with-average-rating .star-rating{
+            font-size: 1.2rem;
+            margin-right: 8px;
+}
+.review-summary-widget--with-average-rating .star-rating i{
+            color: #e59819;
+}
+.review-summary-widget--with-average-rating {
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 0 0 0 3.2rem;
+}
+.review-summary-widget--average-stars{
+            height: 36px;
+}
+.review-summary-widget--rates-row {
+            align-items: center;
+            background-color: transparent;
+            border: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: .8rem;
+            padding: 0;
+            width: 100%;
+            justify-content: space-between;
+}
+
+/*-----COURSE REVIEW------*/
+.individual-review{
+            width: 900px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #d1d7dc;
+            padding: 1.6rem 0 2.4rem;
+}
+.review-filter-widget select{
+            float: right;
+            background: #fff;
+            border: 1px solid #1c1d1f;
+            border-radius: 2px;
+            cursor: pointer;
+            display: block;
+            padding: 0 4rem 0 1rem;
+            width: 220px;
+            height: 48px;
+            font-size: 16px;
+}
+.individual-review--author-avatar{
+            display: block;
+            padding: 0 2.4rem 0 0;
+}
+.individual-review--author-avatar img{
+            width: 4.8rem;
+            height: 4.8rem; 
+            border-radius: 50%;    
+}
+.individual-review--author-name{
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -.02rem;
+            font-size: 1.6rem;
+
+}
+.individual-review--detail{
+            color: #6a6f73;
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: .8rem;
+            gap: 8px;
+}
+.individual-review--feedback{
+            margin-top: .8rem;
+}
+.review-feedback--actions{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+}
+.review-feedback--actions .review-feedback--actions-thumb{
+            padding: 0.6rem 0;
+            width: 3rem;
+            height: 3rem;
+            background: #fff;
+            border: 1.2px solid #000;
+            border-radius: 50%;
+            text-align: center;
+}
+.review-feedback--actions i{
+            font-size: 26px;
+}
+.review-feedback--abuse{
+            background-color: #fff;
+            text-decoration: underline;
+            font-size: 16px;
+            outline: none;
+            border: none;
+}
+.like{
+            color: #4080FF;
+}
+.review-summary-widget--rate-gauge {
+            display: flex;
+            margin-right: .8rem;
+            min-width: 7.5rem;
+            flex: 1;
+}
+
+.review-summary-widget--rate-gauge--bg {
+            background: #d1d7dc;
+            display: block;
+            height: .8rem;
+            width: 100%;
+}
+
+.review-summary-widget--rate-gauge--fill {
+            background: #6a6f73;
+            display: block;
+            height: 100%;
+}

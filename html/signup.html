@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+            <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Sign up</title>
+                        <link rel="stylesheet" href="../css/style.css" />
+                        <link rel="stylesheet" href="../css/signup.css">
+                        <link rel="shortcut icon" href="/asset/img/logo.png" type="image/x-icon" />
+                        <script src="https://kit.fontawesome.com/b3dc9770b9.js" crossorigin="anonymous"></script>
+            </head>
+            
+<body>
+            <header>
+                        <nav>
+                                    <div class="logo">
+                                                <a href="index.html"><img src="/asset/img/logo.png" alt=""
+                                                                        class="logo-img"></a>
+                                    </div>
+                                    <div class="categories">
+                                                <button
+                                                            class="btn btn-dropdown btn-categories__main">Categories</button>
+                                                <div class="categories__menu_1">
+                                                            <ul class="list-menu dropdown-menu__1">
+                                                                        <li>
+                                                                                    <a href="#"
+                                                                                                class="header-categories header-categories__menu-1">Ôn
+                                                                                                thi JLPT<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div class="categories__menu_2">
+                                                                                                <ul
+                                                                                                            class="list-menu dropdown-menu__2">
+                                                                                                            <li><a href="#"
+                                                                                                                                    class="header-categories header-categories__menu-2">N5</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N4</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N3</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N2</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N1</a>
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                                    </a>
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href=""
+                                                                                                class="header-categories header-categories__menu-1">Ôn
+                                                                                                thi
+                                                                                                NASTTEST<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div
+                                                                                                class="list-item categories__menu_2">
+
+                                                                                                <ul>
+                                                                                                            <li><a>N5</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N4</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N3</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N2</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N1</a>
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href=""
+                                                                                                class="header-categories header-categories__menu-1">Luyện
+                                                                                                tập kaiwa<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div
+                                                                                                class="list-item categories__menu_2">
+                                                                                                <ul>
+                                                                                                            <li><a>Sơ cấp</a>
+                                                                                                            </li>
+                                                                                                            <li><a>Trung cấp</a>
+                                                                                                            </li>
+                                                                                                            <li><a>Cao cấp</a>
+                                                                                                            </li>
+
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href=""
+                                                                                                class="header-categories header-categories__menu-1">Thi
+                                                                                                thử<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                        </li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                                    <div class="right_side"></div>
+                                    <div class="__search">
+                                                <input type="text" name="search" id="search" placeholder="Search" />
+                                    </div>
+                                    <div class="user_login">
+                                                <a href="/html/signin.html"><input type="submit" value="Log in" name="log_in"
+                                                            class="btn-submit __user" id="login" /></a>
+                                                            <a href="/html/profile.html" class="avt-user--login"><img src="/asset/img/instruc-avt.jpg" alt=""></a>
+                                    </div>
+                                    <div class="shopping-cart">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <div class="product-value">
+                                                            <span class="product-count">1</span>
+                                                </div>
+                                    </div>
+                                    <div class="language">
+                                                <button class="btn btn-language">
+                                                            <i class="fa-solid fa-globe"></i>
+                                                </button>
+                                                <div class="language-menu">
+                                                            <ul class="list-language">
+                                                                        <li>English</li>
+                                                                        <li>Vietnam</li>
+                                                                        <li>Chinese</li>
+                                                                        <li>Japan</li>
+                                                                        <li>Korean</li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                        </nav>
+
+            </header>
+
+            <div class="main-content">
+                        <div class="signupbox">
+                                    <h2 class="signupbox__header">Đăng ký tài khoản</h2>
+                                    <div class="signupbox__content">                 
+                                                <form action-type="signup" class="signin-form dj" id="signup-form" name="signup-form"
+                                                            method="post">
+                                                            <input type="hidden">
+                                                            <div class="manage-fields-wrapper"> <input type="hidden" name="locale"
+                                                                                    value="en_US">
+                                                                        <div class="form-field-container  component--social-name-field"
+                                                                                    id="form-item-name">
+                                                                                    <div><input name="name" required=""
+                                                                                                            maxlength="64"
+                                                                                                            minlength="7"
+                                                                                                            placeholder="Họ và tên"
+                                                                                                            data-purpose="name"
+                                                                                                            type="text"
+                                                                                                            id="name--user"
+                                                                                                            class="form-control"
+                                                                                                            value=""></div>
+                                                                        </div>
+                                                                        <div class="form-field-container  labeled "
+                                                                                    id="form-item-password">
+                                                                                    <div>
+                                                                                                <select name="level" id="level--user" class="form-control">
+                                                                                                            <option value="N5">--Chọn trình đồ của bạn--</option>
+                                                                                                            <option value="N5">N5</option>
+                                                                                                            <option value="N4">N4</option>
+                                                                                                            <option value="N3">N3</option>
+                                                                                                            <option value="N2">N2</option>
+                                                                                                            <option value="N1">N1</option>
+                                                                                                </select>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="form-field-container  labeled "
+                                                                                    id="form-item-email">
+                                                                                    <div>
+                                                                                                <input name="email" required=""
+                                                                                                            maxlength="64"
+                                                                                                            minlength="7"
+                                                                                                            placeholder="Email"
+                                                                                                            data-purpose="email"
+                                                                                                            type="email"
+                                                                                                            id="email--1"
+                                                                                                            class="form-control"
+                                                                                                            value="">
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="form-field-container  labeled "
+                                                                                    id="form-item-password">
+                                                                                    <div id="tooltip-reference-password"
+                                                                                                class="tooltip-reference pos-r ">
+                                                                                                <input type="password"
+                                                                                                            name="password"
+                                                                                                            maxlength="64"
+                                                                                                            minlength="6"
+                                                                                                            required=""
+                                                                                                            data-purpose="password"
+                                                                                                            placeholder="Mật khẩu"
+                                                                                                            class="password form-control"
+                                                                                                            id="id_password">
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="form-field-container  labeled "
+                                                                                    id="form-item-password">
+                                                                                    <div id="tooltip-reference__confirm-password"
+                                                                                                class="tooltip-reference pos-r ">
+                                                                                                <input type="password"
+                                                                                                            name="password"
+                                                                                                            maxlength="64"
+                                                                                                            minlength="6"
+                                                                                                            required=""
+                                                                                                            data-purpose="password"
+                                                                                                            placeholder="Xác nhận mật khẩu"
+                                                                                                            class="confirm-password form-control"
+                                                                                                            id="id_confirm-password">
+                                                                                    </div>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="signup-form--field-group--5UG71">
+                                                                        <label class="subscribe-emails" for="checkbox--1">
+                                                                                    <input name="subscribeToEmails" class="" id="checkbox--1" type="checkbox">
+                                                                                    
+                                                                                    <span>Gửi cho tôi các ưu đãi đặc biệt, các đề xuất cá nhân và các mẹo học tập</span>
+                                                                        </label>
+                                                            </div>
+                                                            <div class="form-actions">
+                                                                        <div class="submit-row"> 
+                                                                                    <input type="submit" name="submit"
+                                                                                                value="Đăng ký ngay"
+                                                                                                class="btn btn-signup "
+                                                                                                id="submit-id-submit"
+                                                                                                data-purpose="do-signup">
+                                                                                    
+                                                                        </div>
+                                                            </div>
+                                                </form>
+                                                <div class="signupbox__footer">
+                                                            <div>Bạn đã có tài khoản? 
+                                                                        <a class="sign-link" href="signin.html" data-purpose="sign-up">
+                                                                                    Đăng nhập ngay
+                                                                        </a>
+                                                            </div>
+                                                </div>
+                                    </div>
+                                    
+                        </div>
+
+            </div>
+            <footer id="footer">
+                        <div class="container">
+                                    <div class="row">
+                                                <div class="col-12">
+                                                            <h2 class="footer_header">
+                                                                        TRUNG TÂM TIẾNG NHẬT NIHONYUME
+                                                            </h2>
+                                                </div>
+                                                <div class="col-8">
+                                                            <ul class="list_address">
+                                                                        <li>
+                                                                                    <i
+                                                                                                class="fa fa-map-marker"></i>&nbsp;&nbsp;NihonYume
+                                                                                    Q12: 48/11 TCH07, Tân Chánh Hiệp,
+                                                                                    Quận 12, Tp. HCM
+                                                                        </li>
+                                                                        <li>
+                                                                                    <i
+                                                                                                class="fa fa-map-marker"></i>&nbsp;&nbsp;NihonYume
+                                                                                    Thủ Đức: Khu phố 6, Linh Trung, Thủ
+                                                                                    Đức, Tp. HCM
+                                                                        </li>
+                                                            </ul>
+                                                            <ul class="list-procy">
+                                                                        <li>
+                                                                                    <a href="https://nihonyume.edu.vn/dieu-khoan-dich-vu/"
+                                                                                                rel="”nofollow”"
+                                                                                                data-wpel-link="internal">Điều
+                                                                                                khoản sử dụng</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href="https://nihonyume.edu.vn/chinh-sach-bao-mat/"
+                                                                                                rel="”nofollow”"
+                                                                                                data-wpel-link="internal">Chính
+                                                                                                sách bảo mật</a>
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a href="https://nihonyume.edu.vn/chinh-sach-thanh-toan/"
+                                                                                                rel="”nofollow”"
+                                                                                                data-wpel-link="internal">Chính
+                                                                                                sách thanh
+                                                                                                toán</a>
+                                                                        </li>
+                                                            </ul>
+                                                </div>
+                                                <div class="col-4">
+                                                            <a href="tel:0985173135" rel="”nofollow”" class="callToYume"
+                                                                        data-wpel-link="internal">
+                                                                        <i class="fa fa-phone"></i>
+                                                                        <div class="callToYume_content">
+                                                                                    <span>0985173135</span>
+                                                                                    <span>0985xxxxx</span>
+                                                                        </div>
+                                                            </a>
+                                                            <div class="info_company2">
+                                                                        <p>- Tên công ty: Công ty TNHH Giáo dục và
+                                                                                    Thương mại NihonYume Việt Nam</p>
+                                                                        <p>- Trụ sở chính: 48/11 TCH07, Tân Chánh Hiệp,
+                                                                                    Quận 12, Tp. HCM</p>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="info_company">
+                                                                        <p>
+                                                                                    <i class="fa fa-envelope"></i>
+                                                                                    nihonyume.japanese@gmail.com
+                                                                        </p>
+                                                                        <p>
+                                                                                    <i class="fa fa-globe"></i>
+                                                                                    nihonyume.edu.vn
+                                                                        </p>
+                                                                        <p>
+                                                                                    <i class="fa fa-clock-o"></i> Thứ 2
+                                                                                    - thứ 7: 8h00 - 20h30
+                                                                        </p>
+                                                                        <p>
+                                                                                    <a href="http://online.gov.vn/Home/WebDetails/68252"
+                                                                                                target="_blank"
+                                                                                                rel="”nofollow” nofollow noopener noreferrer"
+                                                                                                data-wpel-link="external"><img
+                                                                                                            style="width: 150px;"
+                                                                                                            alt=""
+                                                                                                            title=""
+                                                                                                            src="/image/bocongthuong.png"></a>
+                                                                        </p>
+                                                            </div>
+                                                            <div class="info_company">
+                                                                        <p style="font-style: italic;">Theo dõi
+                                                                                    NihonYume tại:</p>
+                                                                        <ul class="BlockIsocialShare">
+                                                                                    <li class="ic_fb">
+                                                                                                <a href="" target="_blank"
+                                                                                                            rel="”nofollow” nofollow noopener noreferrer"
+                                                                                                            data-wpel-link="external">
+                                                                                                            <svg aria-hidden="true"
+                                                                                                                        focusable="false"
+                                                                                                                        data-prefix="fab"
+                                                                                                                        data-icon="facebook-f"
+                                                                                                                        role="img"
+                                                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                                                        viewBox="0 0 320 512"
+                                                                                                                        class="svg-inline--fa fa-facebook-f fa-w-10 fa-2x">
+                                                                                                                        <path fill="currentColor"
+                                                                                                                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                                                                                                                                    class="">
+                                                                                                                        </path>
+                                                                                                            </svg>
+                                                                                                </a>
+                                                                                    </li>
+                                                                                    <li class="ic_yt">
+                                                                                                <a href="" target="_blank"
+                                                                                                            rel="”nofollow” nofollow noopener noreferrer"
+                                                                                                            data-wpel-link="external">
+                                                                                                            <svg aria-hidden="true"
+                                                                                                                        focusable="false"
+                                                                                                                        data-prefix="fab"
+                                                                                                                        data-icon="youtube"
+                                                                                                                        role="img"
+                                                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                                                        viewBox="0 0 576 512"
+                                                                                                                        class="svg-inline--fa fa-youtube fa-w-18 fa-2x">
+                                                                                                                        <path fill="currentColor"
+                                                                                                                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                                                                                                                                    class="">
+                                                                                                                        </path>
+                                                                                                            </svg>
+                                                                                                </a>
+                                                                                    </li>
+                                                                                    <li class="ic_it">
+                                                                                                <a href="" rel="”nofollow” nofollow noopener noreferrer"
+                                                                                                            data-wpel-link="external"
+                                                                                                            target="_blank">
+                                                                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                                        width="256px"
+                                                                                                                        height="256px"
+                                                                                                                        viewBox="0 0 256 256"
+                                                                                                                        version="1.1"
+                                                                                                                        preserveAspectRatio="xMidYMid">
+                                                                                                                        <g>
+                                                                                                                                    <path d="M0,128.002 C0,180.416 31.518,225.444 76.619,245.241 C76.259,236.303 76.555,225.573 78.847,215.848 C81.308,205.457 95.317,146.1 95.317,146.1 C95.317,146.1 91.228,137.927 91.228,125.848 C91.228,106.879 102.222,92.712 115.914,92.712 C127.557,92.712 133.182,101.457 133.182,111.929 C133.182,123.633 125.717,141.14 121.878,157.355 C118.671,170.933 128.686,182.008 142.081,182.008 C166.333,182.008 182.667,150.859 182.667,113.953 C182.667,85.899 163.772,64.901 129.405,64.901 C90.577,64.901 66.388,93.857 66.388,126.201 C66.388,137.353 69.676,145.217 74.826,151.307 C77.194,154.104 77.523,155.229 76.666,158.441 C76.052,160.796 74.642,166.466 74.058,168.713 C73.206,171.955 70.579,173.114 67.649,171.917 C49.765,164.616 41.436,145.031 41.436,123.015 C41.436,86.654 72.102,43.054 132.918,43.054 C181.788,43.054 213.953,78.418 213.953,116.379 C213.953,166.592 186.037,204.105 144.887,204.105 C131.068,204.105 118.069,196.635 113.616,188.15 C113.616,188.15 106.185,217.642 104.611,223.337 C101.897,233.206 96.585,243.07 91.728,250.758 C103.24,254.156 115.401,256.007 128.005,256.007 C198.689,256.007 256.001,198.698 256.001,128.002 C256.001,57.309 198.689,0 128.005,0 C57.314,0 0,57.309 0,128.002 Z"
+                                                                                                                                                fill="#CB1F27">
+                                                                                                                                    </path>
+                                                                                                                        </g>
+                                                                                                            </svg>
+                                                                                                </a>
+                                                                                    </li>
+                                                                                    <li class="ic_tw">
+                                                                                                <a href="" target="_blank"
+                                                                                                            rel="”nofollow” nofollow noopener noreferrer"
+                                                                                                            data-wpel-link="external">
+                                                                                                            <svg aria-hidden="true"
+                                                                                                                        focusable="false"
+                                                                                                                        data-prefix="fab"
+                                                                                                                        data-icon="twitter"
+                                                                                                                        role="img"
+                                                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                                                        viewBox="0 0 512 512"
+                                                                                                                        class="svg-inline--fa fa-twitter fa-w-16 fa-2x">
+                                                                                                                        <path fill="currentColor"
+                                                                                                                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                                                                                                                    class="">
+                                                                                                                        </path>
+                                                                                                            </svg>
+                                                                                                </a>
+                                                                                    </li>
+                                                                                    <li class="ic_it">
+                                                                                                <a href="" target="_blank"
+                                                                                                            rel="”nofollow” nofollow noopener noreferrer"
+                                                                                                            data-wpel-link="external">
+                                                                                                            <svg aria-hidden="true"
+                                                                                                                        focusable="false"
+                                                                                                                        data-prefix="fab"
+                                                                                                                        data-icon="instagram"
+                                                                                                                        role="img"
+                                                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                                                        viewBox="0 0 448 512"
+                                                                                                                        class="svg-inline--fa fa-instagram fa-w-14 fa-2x">
+                                                                                                                        <path fill="currentColor"
+                                                                                                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                                                                                                                    class="">
+                                                                                                                        </path>
+                                                                                                            </svg>
+                                                                                                </a>
+                                                                                    </li>
+                                                                        </ul>
+                                                            </div>
+                                                </div>
+                                    </div>
+                        </div>
+            </footer>
+</body>
+</html>

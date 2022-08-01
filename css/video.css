@@ -1,0 +1,525 @@
+.material-icons {
+            cursor: pointer;
+}
+
+.video-gallery {
+            background: #f75862;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            align-items: flex-start;
+            padding: 20px 5%;
+}
+
+/* -----Video player Styling -----*/
+.video_player {
+            position: relative;
+            width: 700px;
+            height: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+}
+
+#main-video {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border-radius: 5px;
+
+}
+
+.video_player .progress-area-time {
+            width: 55px;
+            height: 20px;
+            position: absolute;
+            left: var(--x);
+            white-space: nowrap;
+            transform: translateX(-50%);
+            bottom: 57px;
+            padding: 2px 10px;
+            color: #fff;
+            font-size: 13px;
+            background-color: #002333;
+            border-radius: 3px;
+            z-index: 4;
+}
+
+.video_player .controls {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 40px;
+            width: 100%;
+            background: rgb(0, 0, 0, 71%);
+            z-index: 3;
+            transform: translateY(0);
+}
+
+.video_player .controls .progress-area {
+            cursor: pointer;
+            width: 100%;
+            height: 5px;
+            margin: auto;
+            background: #f0f0f0;
+
+}
+
+.video_player .controls .progress-area .progress-bar {
+            position: relative;
+            width: 0%;
+            background: #e71726;
+            height: inherit;
+            border-radius: inherit;
+            cursor: pointer;
+            transition: ease-in 0.2ms;
+}
+
+
+.video_player .controls .progress-area .progress-bar::before {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            right: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background: #e71726;
+}
+
+.controls .control-lists {
+            width: 97%;
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+}
+
+.controls .control-lists .control-left,
+.controls .control-lists .control-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+
+.controls .control-lists .control-left {
+            font-size: 15px;
+            white-space: nowrap;
+            color: #fff;
+            margin-left: 5px;
+}
+
+.controls .control-lists .control-right {
+            gap: 7px;
+}
+
+.controls .icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-left: 8px;
+            margin-right: 8px;
+}
+
+.controls .icon .fast-rewind:active {
+            transition: 0.2s;
+            transform: rotate(-45deg);
+}
+
+.controls .icon .fast-forward:active {
+            transition: 0.2s;
+            transform: rotate(45deg);
+}
+
+.controls .icon #volume_range {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 0px;
+            height: 3px;
+            background-color: #fff;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: ease-out 0.4s;
+}
+
+.controls .icon #volume_range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            color: #fff;
+            background-color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+            opacity: 0;
+            outline: none;
+}
+
+.controls .icon:hover #volume_range {
+            display: inline-block;
+            width: 60px;
+}
+
+.controls .icon:hover #volume_range::-webkit-slider-thumb {
+            opacity: 1;
+            pointer-events: auto;
+}
+
+.video_player #settings {
+            display: none;
+            position: absolute;
+            background: rgb(0, 0, 0, 80%);
+            width: 120px;
+            bottom: 52px;
+            right: 80px;
+            color: #cdcaca;
+            text-align: center;
+            padding: 5px 0;
+}
+
+.video_player #settings.open {
+            display: block;
+}
+
+.video_player #settings .speed-number {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 26px;
+            margin-bottom: 7px;
+}
+
+.video_player #settings .speed-number:hover {
+            background: rgba(79, 78, 78, 0.6);
+}
+
+.controls .icon .setttings-btn:active {
+            transition: 0.3s;
+            transform: rotate(45deg);
+}
+
+.video-title {
+
+            font-size: 23px;
+            padding: 15px 0 15px 0;
+}
+
+.main-video--title {
+            color: #fff;
+}
+
+.video-list--item__title {
+            color: #333;
+}
+
+.video-list {
+            display: grid;
+            background-color: #fff;
+            border-radius: 5px;
+            height: 454px;
+            overflow-y: scroll;
+}
+
+.video-list::-webkit-scrollbar {
+            width: 7px;
+}
+
+.video-list::-webkit-scrollbar-track {
+            background: #ccc;
+            border-radius: 50px;
+}
+
+.video-list::-webkit-scrollbar-thumb {
+            background: #666;
+            border-radius: 50px;
+}
+
+.video-list--item {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #f7f7f7;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.video-list--item:hover {
+            background: #f45f69c8;
+}
+
+.video-list .active {
+            background: #e71726 !important;
+}
+
+.video-list .active .video-list--item__title {
+            color: #fff;
+}
+
+.video-list--video__item {
+            width: 100px;
+            border-radius: 5px;
+}
+
+/* -----TEST-----*/
+.lesson-test{
+            height: 500px;
+            position: relative;
+}
+.start_btn,
+.quiz_box,
+.result_box {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.quiz_box.activeQuiz,
+.result_box.activeResult {
+            opacity: 1;
+            z-index: 5;
+            pointer-events: auto;
+            transform: translate(-50%, -50%) scale(1);
+}
+
+.start_btn button {
+            font-size: 25px;
+            font-weight: 500;
+            color: #007bff;
+            padding: 15px 30px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+}
+
+
+
+.quiz_box {
+            width: 550px;
+            height: auto;
+            background: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transform: translate(-50%, -50%) scale(0.9);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+}
+
+
+
+.que_text {
+            font-size: 25px;
+            font-weight: 600;
+}
+
+.option_list {
+            padding: 20px 0px;
+            display: block;
+}
+
+.option_list .option {
+            background: rgb(255, 240, 240);
+            border: 1px solid #fe8496;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-size: 17px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+}
+
+.option_list .option:last-child {
+            margin-bottom: 0px;
+}
+
+.option_list .option:hover {
+            color: #004085;
+            background: #cce5ff;
+            border: 1px solid #b8daff;
+}
+
+.option_list .option.correct {
+            color: #155724;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+}
+
+.option_list .option.incorrect {
+            color: #621d24;
+            background: #fa8790;
+            border: 1px solid #f5c6cb;
+}
+
+.option_list .option.disabled {
+            pointer-events: none;
+}
+
+.option_list .option .icon {
+            height: 26px;
+            width: 26px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 13px;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            line-height: 24px;
+}
+
+.option_list .option .icon.tick {
+            color: #23903c;
+            border-color: #23903c;
+            background: #d4edda;
+}
+
+.option_list .option .icon.cross {
+            color: #a42834;
+            background: #f8d7da;
+            border-color: #a42834;
+}
+
+.footer-quiz {
+            height: 60px;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid lightgrey;
+}
+
+.footer-quiz .total_que span {
+            display: flex;
+            user-select: none;
+}
+
+.footer-quiz .total_que span p {
+            font-weight: 500;
+            padding: 0 5px;
+}
+
+.footer-quiz .total_que span p:first-child {
+            padding-left: 0px;
+}
+
+.footer-quiz button {
+            height: 40px;
+            padding: 0 13px;
+            font-size: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: #fff;
+            border-radius: 5px;
+            background: #007bff;
+            border: 1px solid #007bff;
+            line-height: 10px;
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.95);
+            transition: all 0.3s ease;
+}
+
+.footer-quiz button:hover {
+            background: #0263ca;
+}
+
+.footer-quiz button.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1);
+}
+
+.result_box {
+            background: #fff;
+            border-radius: 5px;
+            display: flex;
+            padding: 25px 30px;
+            width: 450px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            transform: translate(-50%, -50%) scale(0.9);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+}
+
+.result_box .icon {
+            font-size: 100px;
+            color: #007bff;
+            margin-bottom: 10px;
+}
+
+.result_box .complete_text {
+            font-size: 20px;
+            font-weight: 500;
+}
+
+.result_box .score_text span {
+            display: flex;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 500;
+}
+
+.result_box .score_text span p {
+            padding: 0 4px;
+            font-weight: 600;
+}
+
+.result_box .buttons {
+            display: flex;
+            margin: 20px 0;
+}
+
+.result_box .buttons button {
+            margin: 0 10px;
+            height: 45px;
+            padding: 0 20px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #007bff;
+            transition: all 0.3s ease;
+}
+
+.buttons button.restart {
+            color: #fff;
+            background: #007bff;
+}
+
+.buttons button.restart:hover {
+            background: #0263ca;
+}
+
+.buttons button.quit {
+            color: #007bff;
+            background: #fff;
+}
+
+.buttons button.quit:hover {
+            color: #fff;
+            background: #007bff;
+}

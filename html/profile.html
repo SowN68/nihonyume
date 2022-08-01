@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>NihonYume</title>
+            <link rel="stylesheet" type="text/css"
+                        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+            <link rel="stylesheet" href="../css/profile.css">
+            <link rel="stylesheet" href="../css/style.css" />
+            <link rel="shortcut icon" href="/asset/img/logo.png" type="image/x-icon" />
+            <script src="https://kit.fontawesome.com/b3dc9770b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+            <header>
+                        <nav>
+                                    <div class="logo">
+                                                <a href="index.html"><img src="/asset/img/logo.png" alt=""
+                                                                        class="logo-img"></a>
+                                    </div>
+                                    <div class="categories">
+                                                <button
+                                                            class="btn btn-dropdown btn-categories__main">Categories</button>
+                                                <div class="categories__menu_1">
+                                                            <ul class="list-menu dropdown-menu__1">
+                                                                        <li>
+                                                                                    <a href="#"
+                                                                                                class="header-categories header-categories__menu-1">Ôn
+                                                                                                thi JLPT<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div class="categories__menu_2">
+                                                                                                <ul
+                                                                                                            class="list-menu dropdown-menu__2">
+                                                                                                            <li><a href="#"
+                                                                                                                                    class="header-categories header-categories__menu-2">N5</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N4</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N3</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N2</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N1</a>
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                                    </a>
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a
+                                                                                                class="header-categories header-categories__menu-1">Ôn
+                                                                                                thi
+                                                                                                NASTTEST<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div
+                                                                                                class="list-item categories__menu_2">
+
+                                                                                                <ul>
+                                                                                                            <li><a>N5</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N4</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N3</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N2</a>
+                                                                                                            </li>
+                                                                                                            <li><a>N1</a>
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a
+                                                                                                class="header-categories header-categories__menu-1">Luyện
+                                                                                                tập kaiwa<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                                    <div
+                                                                                                class="list-item categories__menu_2">
+                                                                                                <ul>
+                                                                                                            <li><a>Sơ cấp</a>
+                                                                                                            </li>
+                                                                                                            <li><a>Trung cấp</a>
+                                                                                                            </li>
+                                                                                                            <li><a>Cao cấp</a>
+                                                                                                            </li>
+
+                                                                                                </ul>
+                                                                                    </div>
+
+                                                                        </li>
+                                                                        <li>
+                                                                                    <a
+                                                                                                class="header-categories header-categories__menu-1">Thi
+                                                                                                thử<i
+                                                                                                            class="fas fa-caret-right"></i></a>
+                                                                        </li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                                    <div class="right_side"></div>
+                                    <div class="__search">
+                                                <input type="text" name="search" id="search" placeholder="Search" />
+                                    </div>
+                                    <div class="user_login">
+                                                <a href="/html/signin.html"><input type="submit" value="Log in"
+                                                                        name="log_in" class="btn-submit __user"
+                                                                        id="login" /></a>
+                                    </div>
+                                    <div class="shopping-cart">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <div class="product-value">
+                                                            <span class="product-count">1</span>
+                                                </div>
+                                    </div>
+                                    <div class="language">
+                                                <button class="btn btn-language">
+                                                            <i class="fa-solid fa-globe"></i>
+                                                </button>
+                                                <div class="language-menu">
+                                                            <ul class="list-language">
+                                                                        <li>English</li>
+                                                                        <li>Vietnam</li>
+                                                                        <li>Chinese</li>
+                                                                        <li>Japan</li>
+                                                                        <li>Korean</li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                        </nav>
+
+            </header>
+
+            <section class="profile-container">
+                        <div class="col-left-content">
+                                    <div class="user-avatar-container">
+                                                <img class="user-avatar" id="user-avatar-preview" src="../asset/img/instruc-avt.jpg">
+                                    </div>
+                                    <button type="button" class="btn change-avatar">
+                                          <span class="change-avatar-btn-desktop">Thay ảnh đại diện</span>
+                                                <span class="change-avatar-btn-mobile">Thay ảnh</span>
+                                    </button>
+                                    <div class="account-left-menu">
+                                                <p class="item-user information current"><span>Thông
+                                                                        tin cá nhân</span></p>
+                                                <p class="item-user notifications"><i
+                                                                        class="zmdi zmdi-notifications"></i><span>Thông
+                                                                        báo</span></p>
+                                                <p class="item-user courses"><i
+                                                                        class="zmdi zmdi-dns"></i><span>Khóa học của
+                                                                        tôi</span></a>
+                                                <p class="item-user billing"><i
+                                                                        class="zmdi zmdi-card"></i><span>Lịch sử thanh
+                                                                        toán</span></p>
+                                                <p style="cursor: pointer;" onclick="logout()"
+                                                            class="item-user danger logout-tab"><i
+                                                                        class="zmdi zmdi-power"></i><span>Đăng
+                                                                        xuất</span></p>
+                                    </div>
+                        </div>
+                        <div class="col-right-content">
+                                    <div class="" id="user-infor">
+                                                <h2 class="main-user-title">Thông tin cá nhân</h2>
+                                                <table id="user-info-table" class="table" style="display: table;">
+                                                            <tbody>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Họ và Tên
+                                                                                    </td>
+                                                                                    <td class="user-form-item">
+                                                                                                Sơn Nguyễn
+                                                                                                Viết</td>
+                                                                                    <td class="user-form-item action">
+                                                                                                <i
+                                                                                                            class="zmdi zmdi-edit"></i>
+                                                                                                chỉnh sửa
+                                                                                    </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Email</td>
+                                                                                    <td title="Không sửa được"
+                                                                                                class="user-form-item lock form-text-email">
+                                                                                                <p
+                                                                                                            style="overflow-wrap: break-word;">
+                                                                                                            <i aria-hidden="true"
+                                                                                                                        title="Đăng nhập sử dụng google"
+                                                                                                                        class="fa fa-google-plus-square"></i>
+
+                                                                                                            nguyenvietson0608@gmail.com
+                                                                                                </p>
+                                                                                    </td>
+                                                                                    <td
+                                                                                                class="user-form-item protected">
+                                                                                                <i data-toggle="tooltip"
+                                                                                                            data-placement="left"
+                                                                                                            title=""
+                                                                                                            class="zmdi zmdi-lock"
+                                                                                                            data-original-title="Thuộc tính không sửa được"></i>
+                                                                                    </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Ngày sinh
+                                                                                    </td>
+                                                                                    <td class="user-form-item">
+                                                                                                <span
+                                                                                                            class="empty-info">Chưa
+                                                                                                            có
+                                                                                                            thông
+                                                                                                            tin</span>
+                                                                                    </td>
+                                                                                    <td class="user-form-item action">
+                                                                                                <i
+                                                                                                            class="zmdi zmdi-edit"></i>
+                                                                                                chỉnh sửa
+                                                                                    </td>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                        </tr>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Số điện
+                                                                                                thoại</td>
+                                                                                    <td class="user-form-item">
+                                                                                                <span
+                                                                                                            class="empty-info">Chưa
+                                                                                                            có
+                                                                                                            thông
+                                                                                                            tin</span>
+                                                                                    </td>
+                                                                                    <td class="user-form-item action">
+                                                                                                <i
+                                                                                                            class="zmdi zmdi-edit"></i>
+                                                                                                chỉnh sửa
+                                                                                    </td>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                        </tr>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Trình độ
+                                                                                                tiếng Nhật
+                                                                                    </td>
+                                                                                    <td class="user-form-item">
+                                                                                                <span
+                                                                                                            class="empty-info">Chưa
+                                                                                                            có
+                                                                                                            thông
+                                                                                                            tin</span>
+                                                                                    </td>
+                                                                                    <td class="user-form-item action">
+                                                                                                <i
+                                                                                                            class="zmdi zmdi-edit"></i>
+                                                                                                chỉnh sửa
+                                                                                    </td>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                        </tr>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Địa chỉ</td>
+                                                                                    <td class="user-form-item">
+                                                                                                <span
+                                                                                                            class="empty-info">Chưa
+                                                                                                            có
+                                                                                                            thông
+                                                                                                            tin</span>
+                                                                                    </td>
+                                                                                    <td class="user-form-item action">
+                                                                                                <i
+                                                                                                            class="zmdi zmdi-edit"></i>
+                                                                                                chỉnh sửa
+                                                                                    </td>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                        </tr>
+                                                                        <tr>
+                                                                                    <td class="user-form-item desc">
+                                                                                                Quốc gia
+                                                                                    </td>
+                                                                                    <td class="user-form-item">
+                                                                                                <span
+                                                                                                            class="empty-info">Chưa
+                                                                                                            có
+                                                                                                            thông
+                                                                                                            tin</span>
+                                                                                    </td>
+                                                                                    <td class="user-form-item action">
+                                                                                                <i
+                                                                                                            class="zmdi zmdi-edit"></i>
+                                                                                                chỉnh sửa
+                                                                                    </td>
+                                                                                    <!---->
+                                                                                    <!---->
+                                                                        </tr>
+                                                            </tbody>
+                                                </table>
+                                    </div>
+                                    <div class="" id="course-studied">
+                                                <div class="dm-tab">
+                                                            <div class="tab-item active"><i class="zmdi zmdi-layers"></i> Khóa học
+                                                                        đã mua</div>
+            
+                                                            <a>
+                                                                        <div class="tab-item">
+                                                                                    Kết quả kiểm tra</div>
+                                                            </a>
+                                                </div>
+                                                <div class="tab-content-container bought-courses">
+                                                            <div class="bought-courses-container">
+            
+            
+                                                                        <div class="notification-empty-container">
+                                                                                    <i class="fa fa-mortar-board"></i> Bạn chưa mua
+                                                                                    khóa học nào
+                                                                        </div>
+            
+                                                            </div>
+                                                </div>
+                                                <div class="dm-tab" style="margin-top: 0px;">
+                                                            <div class="tab-item review-more-courses">Xem thêm các khóa học khác
+                                                            </div>
+                                                </div>
+                                                <div class="tab-content-container bought-other-courses">
+                                                            <div class="bought-courses-container">
+                                                                        <div class="course-item">
+                                                                                    <div class="images">
+                                                                                                <a href="/html/JLPT-N3/jlptn3.html"><img
+                                                                                                                        src="../asset/img/268766171_1603180263365572_7349006912798671019_n.jpg"></a>
+                                                                                    </div>
+                                                                                    <div class="info">
+                                                                                                <div class="title">
+                                                                                                            <a
+                                                                                                                        href="/html/JLPT-N3/jlptn3.html">N3</a>
+                                                                                                </div>
+                                                                                                <div class="name-gv"
+                                                                                                            title="Giảng viên"> Thầy
+                                                                                                            A</div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="course-item">
+                                                                                    <div class="images">
+                                                                                                <a href="/html/JLPT-N4/jlptn4.html"><img
+                                                                                                                        src=""></a>
+                                                                                    </div>
+                                                                                    <div class="info">
+                                                                                                <div class="title">
+                                                                                                            <a
+                                                                                                                        href="https://dungmori.com/khoa-hoc/4">N4</a>
+                                                                                                </div>
+                                                                                                <div class="name-gv"
+                                                                                                            title="Giảng viên"> Thầy
+                                                                                                            B</div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="course-item">
+                                                                                    <div class="images">
+                                                                                                <a href="/html/JLPT-N2/jlptn2.html"><img
+                                                                                                                        src=""></a>
+                                                                                    </div>
+                                                                                    <div class="info">
+                                                                                                <div class="title">
+                                                                                                            <a
+                                                                                                                        href="/html/JLPT-N2/jlptn2.html">N2</a>
+                                                                                                </div>
+                                                                                                <div class="name-gv"
+                                                                                                            title="Giảng viên"> Thầy
+                                                                                                            C</div>
+                                                                                    </div>
+                                                                        </div>
+                                                                        <div class="course-item">
+                                                                                    <div class="images">
+                                                                                                <a href="/html/JLPT-N5/jlptn5.html"><img
+                                                                                                                        src=""></a>
+                                                                                    </div>
+                                                                                    <div class="info">
+                                                                                                <div class="title">
+                                                                                                            <a
+                                                                                                                        href="/html/JLPT-N5/jlptn5.html">N5</a>
+                                                                                                </div>
+                                                                                                <div class="name-gv"
+                                                                                                            title="Giảng viên"> Thầy
+                                                                                                            D</div>
+                                                                                    </div>
+                                                                        </div>
+                                                            </div>
+                                                </div>
+            
+                                    </div>
+                                    <div class="" id="history-bill">
+                                                <h2 class="main-user-title">Lịch sử thanh toán của bạn</h2>
+                                                <div class="table-box">
+                                                            <table class="table">
+                                                                        <thead>
+                                                                                    <tr>
+                                                                                                <th>Mã số</th>
+                                                                                                <th>Loại</th>
+                                                                                                <th>Mô tả</th>
+                                                                                                <th>Đơn hàng</th>
+                                                                                                <th>Trạng thái</th>
+                                                                                                <th>Số tiền</th>
+                                                                                                <th>Ngày tạo</th>
+                                                                                                <th style="text-align: right;">Xem
+                                                                                                </th>
+                                                                                    </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        </tbody>
+                                                            </table>
+                                                </div>
+            
+            
+            
+                                                <div class="notification-empty-container">
+                                                            <i class="zmdi zmdi-card"></i> Bạn chưa thực hiện bất kỳ giao dịch nào
+                                                </div>
+            
+                                                <div class="paginate-container"> </div>
+                                    </div>
+                        </div>
+                        
+                        
+
+
+                        </div>
+            </section>
+            <script src="../JSON/profile.js"></script>
+</body>
+
+</html>
